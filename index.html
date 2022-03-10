@@ -14,7 +14,7 @@
       <h1 id="title"> Survey Form</h1>
       <p id="description">This is our simple survey form</p>
     </header>
-    
+
     <form id="survey-form">
       <div class="form-group">
         <label id="name-label" for="name">Name</label>
@@ -38,6 +38,51 @@
           required
         />
       </div>
+
+      <div class="form-group">
+        <p>For which position are you studing?</p>
+        <select id="dropdown" name="position" class="form-control" required>
+          <option disabled selected value>Select here</option>
+          <option value="frontend">Front-end Developer</option>
+          <option value="backend">Back-end Developer</option>
+          <option value="fullstack">Full-stack Developer</option>
+          <option value="uxdesigner">UX Designer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend Microverse to a friend?</p>
+        <label>
+          <input
+            name="you-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="you-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="you-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+
+      
+
     </form>
 
     <script  src="js/index.js"></script>
